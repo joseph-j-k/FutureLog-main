@@ -1,0 +1,17 @@
+/* Home.css */
+
+.homeContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.homeTitle {
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .homeTitle {
+    font-size: 24px;
+  }
+}

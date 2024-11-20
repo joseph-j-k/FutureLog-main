@@ -1,0 +1,123 @@
+@import "../../style.css";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+.profile {
+  background-color: #FFFFFF; /* Default background color */
+}
+
+.profile .images {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+.profile .images .cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile .images .profilePic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 200px;
+}
+
+.profile .profileContainer {
+  padding: 20px 70px;
+}
+
+.profile .profileContainer .dancing-script {
+  font-family: "Dancing Script", cursive !important;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  background: linear-gradient(to right, #8c8ff0, #39d8f4); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #000000; /* Default text color */
+}
+
+@media (max-width: 767px) {
+  .profile .profileContainer {
+    padding: 10px;
+  }
+
+  .profile .uInfo {
+    flex-direction: column;
+    height: 30vh;
+    padding: 20px;
+    margin-top: 100px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .profile .profileContainer {
+    padding: 20px;
+  }
+
+  .profile .uInfo .left {
+    flex-wrap: wrap;
+  }
+}
+
+.profile .uInfo {
+  height: 180px;
+  box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+  border-radius: 20px;
+  background-color: #FFFFFF; /* Default background color */
+  color: #000000; /* Default text color */
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.profile .uInfo .info .item span {
+  font-size: 12px;
+}
+
+.profile .uInfo button {
+  border: none;
+  background-color: #5271ff;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.profile .uInfo .left a {
+  color: #9c9c9c; /* Default soft text color */
+}
+
+.profile .uInfo .center span {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.profile .uInfo .center .info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.profile .uInfo .center .info .item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #9c9c9c; /* Default soft text color */
+}
+
+.profile .uInfo .right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
